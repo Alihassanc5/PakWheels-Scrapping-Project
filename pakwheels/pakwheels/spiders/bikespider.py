@@ -28,13 +28,13 @@ class BikeSpider(CrawlSpider):
         body_type = response.css('.table.table-featured.nomargin td a::text').get()
         
         yield {
-            'Url': url,
-            'Price': price,
-            'Title': title,
-            'Location': location,
-            'Engine Year': engine_year,
-            'Engine Millage': engine_millage,
-            'Engine Type': engine_type,
-            'Registered In': registered_in,
-            'Body Type': body_type,
+            'url': url,
+            'price': price,
+            'title': title,
+            'location': location,
+            'engine_year': engine_year,
+            'engine_millage': engine_millage,
+            'engine_type': engine_type,
+            'registered_in': registered_in,
+            'body_type': body_type,
         }
